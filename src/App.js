@@ -9,18 +9,16 @@ import NotFound from "./components/Navigation/NotFound";
 
 const App = () => {
   return (
-    <div>
-      <div>
-        <NavBar />
-        <Switch>
-          <Route path="/services" component={Services} />
-          <Route path="/about" component={AboutUs} />
-          <Route path="/contact" component={ContactUs} />
-          <Route path="/" exact component={Home} />
-          <Route path="/not-found" component={NotFound} />
-          <Redirect to="/not-found" />
-        </Switch>
-      </div>
+    <div style={{ height: "100%" }}>
+      <NavBar />
+      <Switch>
+        <Route path="/services" component={Services} />
+        <Route path="/about" component={AboutUs} />
+        <Route path="/contact" component={ContactUs} />
+        <Route path="/" exact component={Home} />
+        <Route path="/not-found" component={NotFound} />
+        <Redirect to="/not-found" />
+      </Switch>
     </div>
   );
 };
