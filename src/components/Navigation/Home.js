@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Context from "../Context";
 import Slider from "../Slider";
+import "./Home.css";
 
 class Home extends Component {
   state = {};
@@ -17,6 +15,7 @@ class Home extends Component {
           alignItems: "center",
           height: "100%"
         }}
+        className="body"
       >
         <div
           style={{
@@ -24,6 +23,7 @@ class Home extends Component {
             flexDirection: "column",
             marginRight: "1.5% "
           }}
+          className="context"
         >
           <Context />
         </div>
@@ -33,6 +33,7 @@ class Home extends Component {
             flexDirection: "column",
             marginLeft: "1.5% "
           }}
+          className="slider"
         >
           <Slider />
         </div>

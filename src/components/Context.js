@@ -11,15 +11,16 @@ class Context extends Component {
           justifyContent: "center",
           alignItems: "center"
         }}
+        className="context-body"
       >
-        <div>
+        <div className="title-1">
           <h1>Food For Every Kind Of Hunger</h1>
         </div>
-        <div>
+        <div className="title-2">
           <h3>India's Fastest Growing Food Start-up</h3>
           <p>Do check out for our Services</p>
         </div>
-        <div>
+        <div className="btn">
           <Button variant="outline-info">Click Here</Button>
         </div>
       </div>
