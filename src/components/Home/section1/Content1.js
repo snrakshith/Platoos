@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Context from "./Context";
-import Slider from "./Slider";
+import Context from "./components/Context";
+import Slider from "./components/Slider";
 // import Navbar from "../NavBar";
 
-class HomeS1 extends Component {
+class Content1 extends Component {
   state = {};
   render() {
     return (
@@ -70,4 +70,4 @@ class HomeS1 extends Component {
   }
 }
 
-export default HomeS1;
+export default Content1;
