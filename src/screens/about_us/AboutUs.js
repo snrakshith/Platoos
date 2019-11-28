@@ -11,7 +11,7 @@ class AboutUs extends Component {
           flexDirection: "column",
           height: "100%",
           margin: "0% 15%"
-          // backgroundColor: "orange",
+
           // justifyContent: "space-around",
           // padding: "5%"
         }}
@@ -64,7 +64,8 @@ class AboutUs extends Component {
         <div
           style={{
             display: "flex",
-            flexDirection: "row"
+            flexDirection: "row",
+            backgroundColor: "lightgrey"
             // backgroundColor: "blue"
             // justifyContent: "center"
             // margin: "0% 10%",
@@ -92,11 +93,14 @@ class AboutUs extends Component {
           </div>
           <div
             style={{
-              padding: "3% 0%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
               width: "450px",
-              height: "350px"
+              height: "350px",
               // backgroundColor: "red",
-              // margin: "2%",
+              margin: "5%"
+              // padding: "20%"
             }}
           >
             <img

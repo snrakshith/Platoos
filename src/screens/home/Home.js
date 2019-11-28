@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import Section1 from "./section1/Content1";
 import Section2 from "./section2/Content2";
 // import "./Home.css";
@@ -10,39 +11,27 @@ class Home extends Component {
       <div
         style={{
           height: "100%",
-          display: "flex",
-          flexDirection: "column",
-          backgroundColor: "blue",
-          justifyContent: "space-around",
-          alignItems: "space-around"
-          // marginTop: "5%"
+          flexDirection: "row",
+          // backgroundColor: "blue",
+          // justifyContent: "center",
+          // alignItems: "center",
+          margin: "0% 5%"
         }}
         className="body"
       >
         <div
           style={{
             display: "flex",
-            backgroundColor: "red",
+            height: "100%",
+            // flexDirection: "column"
+            // backgroundColor: "orange",
             justifyContent: "center",
             alignItems: "center"
-            // flexDirection: "row",
-            // height: "100%",
-            // marginTop: "5%",
           }}
         >
           <Section1 />
         </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            backgroundColor: "orange"
-            // height: "100%",
-            // flexDirection: "column"
-            // marginTop: "5%"
-          }}
-        >
+        <div style={{ height: "100%" }}>
           <Section2 />
         </div>
       </div>
