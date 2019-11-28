@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
-import "./Context.css";
+import "../styles/Context.css";
 
 class Context extends Component {
   state = {};

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Slider from "../Slider";
+import Slider from "../../components/Slider";
 
 class AboutUs extends Component {
   state = {};
