@@ -1,12 +1,4 @@
-* {
-  padding: 0%;
-  margin: 0%;
-  box-sizing: border-box;
-}
-/* .nav-item {
-  font-size: 10px;
-}
-@media only screen and (min-width: 360px) {
+/* @media only screen and (min-width: 360px) {
   .navbar {
     position: sticky;
     display: flex;
@@ -15,4 +7,4 @@
     height: 50px;
     width: 100%;
   }
-} */
+}  */

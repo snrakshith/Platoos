@@ -9,9 +9,9 @@ class AboutUs extends Component {
         style={{
           display: "flex",
           flexDirection: "column",
-          // backgroundColor: "orange",
           height: "100%",
           margin: "0% 15%"
+          // backgroundColor: "orange",
           // justifyContent: "space-around",
           // padding: "5%"
         }}
@@ -32,9 +32,9 @@ class AboutUs extends Component {
               flexDirection: "column",
               justifyContent: "flex-start",
               alignItems: "flex-start",
+              padding: " 1.5% 5%"
               // backgroundColor: "green",
               // marginLeft: "5%"
-              padding: " 1.5% 5%"
             }}
           >
             <h2>Our goal is to change what you eat</h2>
@@ -44,8 +44,8 @@ class AboutUs extends Component {
             <hr
               style={{
                 display: "flex",
-                // paddingRight: "2%",
                 backgroundColor: "red"
+                // paddingRight: "2%",
               }}
             />
           </div>
@@ -53,9 +53,9 @@ class AboutUs extends Component {
           <div
             style={{
               display: "flex",
-              // backgroundColor: "yellow",
               justifyContent: "center",
               alignItems: "center"
+              // backgroundColor: "yellow",
             }}
           >
             <Slider />
@@ -92,11 +92,11 @@ class AboutUs extends Component {
           </div>
           <div
             style={{
-              // backgroundColor: "red",
-              // margin: "2%",
               padding: "3% 0%",
               width: "450px",
               height: "350px"
+              // backgroundColor: "red",
+              // margin: "2%",
             }}
           >
             <img

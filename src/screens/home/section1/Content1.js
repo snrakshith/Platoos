@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Context from "./components/Context";
-import Slider from "./components/Slider";
+import Slider from "../../../components/Slider";
 // import Navbar from "../NavBar";
 
 class Content1 extends Component {

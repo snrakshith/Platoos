@@ -1,11 +1,11 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
-import NavBar from "./components/NavBar";
-import Services from "./components/Navigation/Services";
-import Home from "./components/Navigation/Home";
-import AboutUs from "./components/Navigation/AboutUs";
-import ContactUs from "./components/Navigation/ContactUs";
-import NotFound from "./components/Navigation/NotFound";
+import NavBar from "./components/navigation/NavBar";
+import Services from "./components/services/Services";
+import Home from "./components/home/Home";
+import AboutUs from "./components/about_us/AboutUs";
+import ContactUs from "./components/contact_us/ContactUs";
+import NotFound from "./components/not_found/NotFound";
 
 const App = () => {
   return (
