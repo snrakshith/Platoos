@@ -21,7 +21,7 @@ class Slider extends Component {
   render() {
     return (
       <div>
-        <Carousel slide={true} style={{ padding: "0% 5%" }}>
+        <Carousel slide={false} style={{ padding: "0% 5%" }}>
           {this.state.images.map(item => (
             <Carousel.Item>
               <img

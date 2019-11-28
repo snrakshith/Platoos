@@ -9,37 +9,73 @@ class AboutUs extends Component {
         style={{
           display: "flex",
           flexDirection: "column",
-          backgroundColor: "orange",
+          // backgroundColor: "orange",
           height: "100%",
-          margin: "0% 10%"
+          margin: "0% 15%"
           // justifyContent: "space-around",
           // padding: "5%"
         }}
       >
-        <div>
-          <div>
-            <h3>Our goal is to change what you eat</h3>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column"
+            // backgroundColor: "red"
+            // height: "100%"
+            // margin: "0% 10%"
+            // justifyContent: "space-around",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "flex-start",
+              alignItems: "flex-start",
+              // backgroundColor: "green",
+              // marginLeft: "5%"
+              padding: " 1.5% 5%"
+            }}
+          >
+            <h2>Our goal is to change what you eat</h2>
             <h6> Changing how you eat is just a means to an end.</h6>
           </div>
-          <hr />
-          <div>
+          <div style={{}}>
+            <hr
+              style={{
+                display: "flex",
+                // paddingRight: "2%",
+                backgroundColor: "red"
+              }}
+            />
+          </div>
+
+          <div
+            style={{
+              display: "flex",
+              // backgroundColor: "yellow",
+              justifyContent: "center",
+              alignItems: "center"
+            }}
+          >
             <Slider />
           </div>
         </div>
         <div
           style={{
             display: "flex",
-            flexDirection: "row",
-            backgroundColor: "blue",
-            margin: "0% 10%",
-            justifyContent: "center"
+            flexDirection: "row"
+            // backgroundColor: "blue"
+            // justifyContent: "center"
+            // margin: "0% 10%",
             // padding: "5%"
           }}
         >
           <div
             style={{
-              // backgroundColor: "black",
               padding: "5%"
+              // justifyContent: "space-between"
+              // backgroundColor: "black",
               // marginLeft: "5%"
             }}
           >
@@ -56,19 +92,18 @@ class AboutUs extends Component {
           </div>
           <div
             style={{
-              // backgroundColor: "black",
-              margin: "2%",
               // backgroundColor: "red",
+              // margin: "2%",
+              padding: "3% 0%",
               width: "450px",
-              height: "300px"
-              // padding: "5%"
+              height: "350px"
             }}
           >
             <img
               src="https://picsum.photos/id/1/5616/3744"
               alt="Coding"
-              height="300px"
               width="450px"
+              height="300px"
             />
           </div>
         </div>

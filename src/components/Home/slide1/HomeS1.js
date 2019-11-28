@@ -4,34 +4,19 @@ import Context from "../Context";
 import Slider from "../Slider";
 // import Navbar from "../NavBar";
 
-class Home extends Component {
-  state = {
-    images: [
-      {
-        image: "https://assets.box8.co.in/square/web/category/22",
-        description: "First Slide"
-      },
-      {
-        image: "https://assets.box8.co.in/square/web/category/22",
-        description: "Second Slide"
-      },
-      {
-        image: "https://assets.box8.co.in/square/web/category/5",
-        description: "Third Slide"
-      }
-    ]
-  };
+class HomeS1 extends Component {
+  state = {};
   render() {
     return (
       <div
         style={{
           height: "100%",
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
+          display: "flex"
+          // flexDirection: "row",
+          // justifyContent: "center",
           // backgroundColor: "blue",
-          marginTop: "5%",
-          alignItems: "flex-start"
+          // marginTop: "5%",
+          // alignItems: "center"
         }}
       >
         <Container>
@@ -45,10 +30,10 @@ class Home extends Component {
             >
               <div
                 style={{
-                  display: "flex",
-                  flexDirection: "column",
+                  display: "flex"
+                  // flexDirection: "column",
                   // justifyContent: "center",
-                  alignItems: "center"
+                  // alignItems: "center"
                   // alignContent: "center",
                   // backgroundColor: "orange"
                 }}
@@ -85,4 +70,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default HomeS1;
