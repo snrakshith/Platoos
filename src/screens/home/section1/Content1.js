@@ -9,7 +9,7 @@ class Content1 extends Component {
   render() {
     return (
       <Container>
-        <Row style={{ marginLeft: "0%" }}>
+        <Row style={{}}>
           <Col
             lg={6}
             md={6}
@@ -20,11 +20,6 @@ class Content1 extends Component {
             <div
               style={{
                 display: "flex"
-                // flexDirection: "column",
-                // justifyContent: "center",
-                // alignItems: "center"
-                // alignContent: "center",
-                // backgroundColor: "orange"
               }}
               className="context"
             >
@@ -37,13 +32,15 @@ class Content1 extends Component {
             sm={12}
             xs={12}
             className=" order-lg-last order-md-last order-sm-first order-first"
-            style={{ marginTop: "0%" }}
+            style={{}}
           >
             <div
               style={{
                 display: "flex",
+                // padding: "0% 5%"
                 flexDirection: "row",
-                justifyContent: "space-between"
+                alignItems: "center",
+                justifyContent: "center"
                 // backgroundColor: "orange"
               }}
               className="slider"
