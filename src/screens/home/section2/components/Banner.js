@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import { Container, Col, Row } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.css";
-import "./Content2.css";
 
-class Content2 extends Component {
+class Banner extends Component {
   state = {};
   render() {
     return (
@@ -11,7 +9,7 @@ class Content2 extends Component {
         style={{
           display: "flex",
           height: "100%",
-          margin: "0% 10%",
+          // margin: "0% 10%",
           flexDirection: "row"
         }}
       >
@@ -29,7 +27,7 @@ class Content2 extends Component {
                 }}
               >
                 <img
-                  src={require("./images/meal.png")}
+                  src={require("../images/meal.png")}
                   alt="meals"
                   height="100px"
                   width="100px"
@@ -59,7 +57,7 @@ class Content2 extends Component {
                 }}
               >
                 <img
-                  src={require("./images/route.png")}
+                  src={require("../images/route.png")}
                   alt="order_tracking"
                   height="100px"
                   width="100px"
@@ -90,7 +88,7 @@ class Content2 extends Component {
                 }}
               >
                 <img
-                  src={require("./images/cycling.png")}
+                  src={require("../images/cycling.png")}
                   alt=" delivery"
                   height="100px"
                   width="100px"
@@ -115,4 +113,4 @@ class Content2 extends Component {
   }
 }
 
-export default Content2;
+export default Banner;

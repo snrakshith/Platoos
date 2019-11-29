@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
-import "../styles/Context.css";
+import "../styles/Content.css";
 
-class Context extends Component {
+class Content extends Component {
   state = {};
   render() {
     return (
@@ -49,4 +49,4 @@ class Context extends Component {
   }
 }
 
-export default Context;
+export default Content;

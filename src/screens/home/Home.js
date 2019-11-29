@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import Section1 from "./section1/Content1";
-import Section2 from "./section2/Content2";
+import Section1 from "./section1/Section1";
+import Section2 from "./section2/components/Banner";
 // import "./Home.css";
 
 class Home extends Component {

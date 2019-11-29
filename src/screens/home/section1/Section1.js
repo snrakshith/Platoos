@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Context from "./components/Context";
+import Content from "./components/Content";
 import Slider from "../../../components/Slider";
 // import Navbar from "../NavBar";
 
-class Content1 extends Component {
+class Section1 extends Component {
   state = {};
   render() {
     return (
@@ -23,7 +23,7 @@ class Content1 extends Component {
               }}
               className="context"
             >
-              <Context />
+              <Content />
             </div>
           </Col>
           <Col
@@ -55,4 +55,4 @@ class Content1 extends Component {
   }
 }
 
-export default Content1;
+export default Section1;
