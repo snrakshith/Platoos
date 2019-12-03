@@ -22,11 +22,7 @@ class NavBar extends Component {
               SERVICES
             </NavLink>
           </li>
-          <li className="nav-item">
-            <NavLink to="/contact" className="nav-link">
-              CONTACT US
-            </NavLink>
-          </li>
+
           <li className="nav-item">
             <NavLink to="/about" className="nav-link">
               ABOUT US
