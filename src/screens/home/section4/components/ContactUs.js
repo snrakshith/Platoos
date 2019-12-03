@@ -28,8 +28,9 @@ class ContactUs extends Component {
           style={{
             display: "flex",
             flexDirection: "row",
-            backgroundColor: "lightgrey",
-            height: "100%"
+            // backgroundColor: "lightgrey",
+            height: "100%",
+            marginTop: "1%"
           }}
         >
           {/* Map  */}
@@ -52,7 +53,7 @@ class ContactUs extends Component {
               padding: "8% 5%",
               width: "100%",
               // margin: " 4% 0%",
-              backgroundColor: "red",
+              // backgroundColor: "red",
               height: "100%"
             }}
           >
@@ -123,7 +124,7 @@ class ContactUs extends Component {
                   marginLeft: "5%"
                 }}
               >
-                <a href="mailto:info@capdice.com" target="">
+                <a href="mailto:info@capdice.com" target="_blank">
                   <p>info@capdice.com</p>
                 </a>
               </div>
