@@ -1,2 +1,6 @@
-About Us
-Images
+1 Modals
+    - General
+    - Sign Up
+    - Login
+==
+2 NavBar with Logo, Login, and Create an Account

@@ -42,7 +42,7 @@ class Content extends Component {
           </p>
         </div>
         <div className="btn">
-          <Button variant="outline-info">Click Here</Button>
+          <Button variant="outline-info">Checkout</Button>
         </div>
       </div>
     );

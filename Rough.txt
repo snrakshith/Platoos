@@ -1,0 +1,14 @@
+General Modal
+==
+Sign up or log in to Platoo
+Or use your email address
+
+By logging in, you agree to Platoo's 
+    - Terms of Service, 
+    - Cookie Policy,
+    - Privacy Policy and Content Policies.
+==
+Login Modal
+==
+Login 
+Email / Platoo's Username

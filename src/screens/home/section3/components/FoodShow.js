@@ -10,8 +10,8 @@ class FoodShow extends Component {
     const settings = {
       className: "slider variable-width",
       dots: true,
-      infinite: true,
-      speed: 500,
+      // infinite: true,
+      speed: 100,
       arrows: true,
       autoplay: true,
       slidesToShow: 1,
@@ -20,28 +20,49 @@ class FoodShow extends Component {
       variableWidth: true
     };
     return (
-      <div style={{ margin: "0%" }}>
+      <div style={{}}>
         <div
           style={{
             display: "flex",
             flexDirection: "row",
             justifyContent: "center",
-            padding: "5%"
+            padding: "2%"
           }}
         >
           <h2>Menu Tonight</h2>
         </div>
-        <Slider {...settings}>
-          <div style={{ width: 450, margin: "0% 5%" }}>
-            <img src={require("../images/i1.jpg")} alt="" height="300px" />
-          </div>
-          <div style={{ width: 200, margin: "0% 5%" }}>
-            <img src={require("../images/i2.jpg")} alt="" height="300px" />
-          </div>
-          <div style={{ width: 250, margin: "0% 5%" }}>
-            <img src={require("../images/i3.jpg")} alt="" height="300px" />
-          </div>
-        </Slider>
+        <div style={{}}>
+          <Slider {...settings}>
+            <div style={{}}>
+              <img
+                src={require("../images/i1.jpg")}
+                alt=""
+                height="400px"
+                width="600px"
+                style={{ paddingRight: "25px" }}
+              />
+            </div>
+            <br />
+            <div style={{}}>
+              <img
+                src={require("../images/i2.jpg")}
+                alt=""
+                height="400px"
+                width="400px"
+                style={{ paddingRight: "25px" }}
+              />
+            </div>
+            <div style={{}}>
+              <img
+                src={require("../images/i3.jpg")}
+                alt=""
+                height="400px"
+                width="350px"
+                style={{ paddingRight: "25px" }}
+              />
+            </div>
+          </Slider>
+        </div>
       </div>
     );
   }
