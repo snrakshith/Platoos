@@ -22,7 +22,7 @@ class Banner extends Component {
                   flexDirection: "column",
                   justifyContent: "center",
                   alignItems: "center",
-                  backgroundColor: "skyblue",
+                  // backgroundColor: "skyblue",
                   padding: " 5%"
                 }}
               >
@@ -52,7 +52,7 @@ class Banner extends Component {
                   flexDirection: "column",
                   justifyContent: "center",
                   alignItems: "center",
-                  backgroundColor: "lightgreen",
+                  // backgroundColor: "lightgreen",
                   padding: "5%"
                 }}
               >
@@ -83,7 +83,7 @@ class Banner extends Component {
                   flexDirection: "column",
                   justifyContent: "center",
                   alignItems: "center",
-                  backgroundColor: "lightgrey",
+                  // backgroundColor: "lightgrey",
                   padding: "5%"
                 }}
               >

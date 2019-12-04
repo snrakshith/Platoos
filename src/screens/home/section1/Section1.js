@@ -19,7 +19,8 @@ class Section1 extends Component {
           >
             <div
               style={{
-                display: "flex"
+                display: "flex",
+                margin: "10% 0%"
               }}
               className="context"
             >

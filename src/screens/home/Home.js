@@ -27,7 +27,7 @@ class Home extends Component {
           <div style={{ marginTop: "10%" }}>
             <Section2 />
           </div>
-          <div style={{ marginTop: "10%" }}>
+          <div style={{ marginTop: "5%" }}>
             <Section3 />
           </div>
           <div style={{ marginTop: "10%" }}>

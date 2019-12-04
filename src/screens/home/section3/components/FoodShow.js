@@ -21,7 +21,16 @@ class FoodShow extends Component {
     };
     return (
       <div style={{ margin: "0%" }}>
-        <h2> Single Item</h2>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            padding: "5%"
+          }}
+        >
+          <h2>Menu Tonight</h2>
+        </div>
         <Slider {...settings}>
           <div style={{ width: 450, margin: "0% 5%" }}>
             <img src={require("../images/i1.jpg")} alt="" height="300px" />

@@ -10,7 +10,7 @@ import NotFound from "./screens/not_found/NotFound";
 const App = () => {
   return (
     <div style={{ height: "100%" }}>
-      <header>
+      <header style={{}}>
         <NavBar />
       </header>
       <Switch>

@@ -36,10 +36,22 @@ class Goals extends Component {
             <h2>Our goal is to change what you eat</h2>
             <h6> Changing how you eat is just a means to an end.</h6>
           </div>
-          <div style={{}}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              paddingLeft: "5%",
+              justifyContent: "flex-start",
+              alignItems: "flex-start"
+            }}
+          >
             <hr
+              align="left"
+              width="25%"
+              noshade
               style={{
-                backgroundColor: "red"
+                backgroundColor: "orange",
+                padding: ".15% 0%"
               }}
             />
           </div>
@@ -48,7 +60,8 @@ class Goals extends Component {
             style={{
               display: "flex",
               justifyContent: "center",
-              alignItems: "center"
+              alignItems: "center",
+              padding: "2%"
               // backgroundColor: "yellow",
             }}
           >

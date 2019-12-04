@@ -5,11 +5,10 @@ class WhoAreWe extends Component {
   state = {};
   render() {
     return (
-      <div style={{ marginTop: "5%" }}>
+      <div style={{ height: "100%", width: "100%" }}>
         <Container
           style={{
             // display: "flex",
-            height: "100%",
             // flexDirection: "row",
             backgroundColor: "lightgrey"
             // backgroundColor: "blue"
@@ -17,12 +16,12 @@ class WhoAreWe extends Component {
             // padding: "5%"
           }}
         >
-          <Row style={{ height: "100%" }}>
+          <Row style={{}}>
             <Col lg={7} md={6}>
               <div
                 style={{
-                  padding: "5%",
-                  height: "100%"
+                  padding: "10%",
+                  height: "350px"
                   // justifyContent: "space-between"
                   // backgroundColor: "black",
                   // marginLeft: "5%"
@@ -46,7 +45,7 @@ class WhoAreWe extends Component {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  width: "100%",
+                  width: "450px",
                   height: "100%"
                   // backgroundColor: "red",
                   // margin: "5%"

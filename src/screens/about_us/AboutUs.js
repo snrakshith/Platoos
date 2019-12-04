@@ -6,14 +6,15 @@ class AboutUs extends Component {
   state = {};
   render() {
     return (
-      <React.Fragment style={{}}>
-        <div style={{ margin: "0% 15%" }}>
+      <div style={{ height: "100%", margin: "0% 15%" }}>
+        <div style={{ marginTop: "5%" }}>
           <Section1 />
         </div>
-        <div style={{ margin: "0% 15%" }}>
+        <div style={{ marginTop: "5%" }}>
           <Section2 />
         </div>
-      </React.Fragment>
+        <div style={{ marginTop: "5%" }}></div>
+      </div>
     );
   }
 }
