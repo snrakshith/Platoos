@@ -1,7 +1,9 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import NavBar from "./components/header/NavBar";
-import Footer from "./components/footer/Footer";
+// import Footer from "./components/footer/Footer";
+import LoginModal from "./components/modals/LoginModal";
+// import SignUpModal from "./components/modals/SignUpModal";
 import Services from "./screens/services/Services";
 import Home from "./screens/home/Home";
 import AboutUs from "./screens/about_us/AboutUs";
@@ -16,6 +18,8 @@ const App = () => {
       <Switch>
         <Route path="/services" component={Services} />
         <Route path="/about" component={AboutUs} />
+        <Route path="/login" component={LoginModal} />
+        {/* <Route path="/signup" component={SignUpModal} /> */}
         <Route path="/" exact component={Home} />
         <Route path="/not-found" component={NotFound} />
         <Redirect to="/not-found" />
