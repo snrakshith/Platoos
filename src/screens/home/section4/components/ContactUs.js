@@ -125,7 +125,7 @@ class ContactUs extends Component {
                 }}
               >
                 <a href="mailto:info@capdice.com" target="_blank">
-                  <p>info@capdice.com</p>
+                  <p style={{ color: "blue" }}>info@capdice.com</p>
                 </a>
               </div>
             </div>

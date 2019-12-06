@@ -27,15 +27,23 @@ class Footer extends Component {
             marginTop: "1%"
           }}
         >
-          <div style={{}}>
+          <div>
             <a href="https://www.facebook.com/capdice" target="_blank">
-              <i class="fa fa-facebook-official fa-3x" aria-hidden="true" />
+              <i
+                class="fa fa-facebook-official fa-3x"
+                aria-hidden="true"
+                style={{ color: "white" }}
+              />
             </a>
           </div>
 
           <div>
             <a href="https://www.linkedin.com/company/capdice/" target="_blank">
-              <i class="fa fa-linkedin-square fa-3x" aria-hidden="true" />
+              <i
+                class="fa fa-linkedin-square fa-3x"
+                aria-hidden="true"
+                style={{ color: "white" }}
+              />
             </a>
           </div>
         </div>

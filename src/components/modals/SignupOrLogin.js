@@ -7,7 +7,7 @@ class SignupOrLogin extends Component {
   render() {
     return (
       <div>
-        <Modal.Dialog>
+        <Modal show={this.props.show} onHide={this.props.hide}>
           <Modal.Header closeButton>
             <Modal.Title>Sign up or log in to Platoo's</Modal.Title>
           </Modal.Header>
@@ -108,7 +108,7 @@ class SignupOrLogin extends Component {
               </p>
             </div>
           </Modal.Footer>
-        </Modal.Dialog>
+        </Modal>
       </div>
     );
   }

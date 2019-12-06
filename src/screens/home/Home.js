@@ -3,7 +3,7 @@ import Section1 from "./section1/Section1";
 import Section2 from "./section2/components/Banner";
 import Section3 from "./section3/components/FoodShow";
 import Section4 from "./section4/components/ContactUs";
-import Footer from "../../components/footer/Footer";
+
 // import "./Home.css";
 
 class Home extends Component {
@@ -34,9 +34,6 @@ class Home extends Component {
             <Section4 />
           </div>
         </main>
-        <footer style={{ marginTop: "5%" }}>
-          <Footer />
-        </footer>
       </div>
     );
   }
