@@ -9,13 +9,13 @@ class NavBar extends Component {
   state = {
     show: false
   };
+  handleShow = () => {
+    this.setState({ show: true });
+  };
+  handleClose = () => {
+    this.setState({ show: false });
+  };
   render() {
-    let handleShow = () => {
-      this.setState({ show: true });
-    };
-    let handleClose = () => {
-      this.setState({ show: false });
-    };
     return (
       <div style={{ display: "flex" }}>
         <nav className="navbar navbar-light" style={{ marginLeft: "20px" }}>
@@ -53,14 +53,16 @@ class NavBar extends Component {
               </li>
               <span>
                 <li className="nav-item">
-                  <NavLink to="/login" className="nav-link">
-                    <LoginModal show={handleShow} hide={handleClose} />
-                    <Button
-                      onClick={() => this.setState({ handleShow: false })}
-                    >
-                      Log in
-                    </Button>
-                  </NavLink>
+                  {/* <NavLink to="/login" className="nav-link"> */}
+                  <LoginModal show={this.handleShow} hide={this.handleClose} />
+                  <Button
+                    onClick={() => {
+                      this.setState({ handleShow: false });
+                    }}
+                  >
+                    Log in
+                  </Button>
+                  {/* </NavLink> */}
                 </li>
                 <li className="nav-item">
                   <NavLink to="/signup" className="nav-link">

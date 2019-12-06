@@ -4,9 +4,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
 
 class LoginModal extends Component {
-  // constructor(props) {
-  //   super(props);
-  // }
+  constructor(props) {
+    super(props);
+  }
   // state = {
   //   show: false
   // };
@@ -27,7 +27,7 @@ class LoginModal extends Component {
           Show
         </button> */}
 
-        <Modal show={this.props.show} onHide={this.props.hide}>
+        <Modal show={this.props.show} onHide={this.props.hide} {...this.props}>
           <Modal.Header closeButton>
             <Modal.Title>Log in</Modal.Title>
           </Modal.Header>
