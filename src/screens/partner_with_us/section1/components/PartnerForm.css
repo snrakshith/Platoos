@@ -7,7 +7,7 @@
 }
 
 .div-container {
-  padding: 25px 50px;
+  padding: 25px 80px;
   /* margin: 0px 100px; */
 }
 
@@ -22,11 +22,11 @@
 #contact,
 #address,
 #city {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .btn-join {
-  margin-top: 15px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -9,19 +9,30 @@ class Section1 extends Component {
         style={{
           display: "flex",
           flexDirection: "row",
-          justifyContent: "center"
+          justifyContent: "center",
+          alignItems: "center"
+          // marginTop: "5%"
         }}
       >
         <div>
           <PartnerForm />
         </div>
-        <div>
+        <div
+          style={{
+            marginLeft: "5%",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center"
+          }}
+        >
           <img
             src={require("./images/partners.jpg")}
             alt="partners_meet"
             width="650px"
             height="450px"
           />
+          <h4>Join us for building up a better tomorrow</h4>
         </div>
       </div>
     );

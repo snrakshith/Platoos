@@ -11,10 +11,13 @@ class PartnerForm extends Component {
           display: "flex",
           flexDirection: "column",
           backgroundColor: "lightblue"
-          // padding: "0px 75px"
         }}
       >
-        <form>
+        <form
+          style={{
+            boxShadow: "5px 5px 5px black"
+          }}
+        >
           <div className="div-container">
             <h3 className="title">Partner with us</h3>
             <div className="div-layout">
@@ -39,7 +42,7 @@ class PartnerForm extends Component {
             </div>
             <div className="btn-join">
               <button className="btn  btn-outline-danger " type="submit">
-                Join Us
+                Register
               </button>
             </div>
           </div>
