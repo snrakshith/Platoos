@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../../../../styles/global.css";
 
 class Verification extends Component {
   state = {};
@@ -19,8 +20,15 @@ class Verification extends Component {
             justifyContent: "center"
           }}
         >
-          <h4>Get Listed on,</h4>
-          <h4>India's online leading Bulk Food Delivery Platform</h4>
+          <h4
+            // className="customFont"
+            style={{
+              fontFamily: "Nunito, sans-serif",
+              fontSize: "30px"
+            }}
+          >
+            Get Listed on, India's online leading Bulk Food Delivery Platform
+          </h4>
         </div>
         <div
           style={{

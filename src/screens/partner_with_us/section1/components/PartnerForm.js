@@ -19,7 +19,12 @@ class PartnerForm extends Component {
           }}
         >
           <div className="div-container">
-            <h3 className="title">Partner with us</h3>
+            <h3
+              className="title"
+              style={{ fontFamily: "Nunito, sans-serif", fontSize: "30px" }}
+            >
+              Partner with us
+            </h3>
             <div className="div-layout">
               <label htmlFor="pg_name">PG Name</label>
               <input type="text" id="pg_name" required />
