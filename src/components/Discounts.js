@@ -5,8 +5,9 @@ class Discounts extends Component {
   state = {};
   render() {
     return (
-      <div>
+      <div className="Cart-container">
         <div
+          className="content"
           style={{
             display: "flex",
             flexDirection: "row",
@@ -17,7 +18,7 @@ class Discounts extends Component {
           <h4>Everyday Value Offer</h4>
         </div>
         <div
-          className="content"
+          className="image-container"
           style={
             {
               // display: "flex",

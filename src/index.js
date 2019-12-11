@@ -11,5 +11,5 @@ import Discounts from "./components/Discounts";
 //   </BrowserRouter>,
 //   document.getElementById("root")
 // );
-// ReactDOM.render(<Cart />, document.getElementById("root"));
-ReactDOM.render(<Discounts />, document.getElementById("root"));
+ReactDOM.render(<Cart />, document.getElementById("root"));
+// ReactDOM.render(<Discounts />, document.getElementById("root"));

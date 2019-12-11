@@ -1,143 +1,131 @@
 import React, { Component } from "react";
-import "./Cart.css";
+import { Container, Row, Col } from "react-bootstrap";
 
 class Cart extends Component {
   state = {};
   render() {
     return (
-      <div
-        // className="Cart-container"
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100%"
-          //   backgroundColor: "blue",
-          //   marginTop: "25px"
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            alignItems: "center"
-          }}
-        >
-          <h4>Everyday Value Offer</h4>
-        </div>
-        <div
-          className="content"
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            alignItems: "center",
-            marginTop: "15px"
-          }}
-        >
-          <div style={{ marginRight: "15px" }}>
-            <div>
-              <img
-                src={require("./images/image1.jpg")}
-                alt="image1"
-                width="350px"
-                height="250px"
-              />
-            </div>
-            <div
+      <div>
+        <Container>
+          <Row>
+            <Col lg={12} sm={12}>
+              <div style={{ display: "flex", justifyContent: "center" }}>
+                <h4>Everyday Value Offer</h4>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={3} sm={12}>
+              <div style={{}}>
+                <img
+                  src={require("./images/image1.jpg")}
+                  alt="image1"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+            </Col>
+            <Col
+              lg={1.5}
               style={{
                 display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                marginTop: "15px"
+                justifyContent: "center",
+                alignItems: "center"
               }}
             >
-              <p>Image 1</p>
-            </div>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              justifyContent: "center"
-            }}
-          >
-            <svg height="50" width="100">
-              <line
-                x1="100"
-                y1="0"
-                x2="0"
-                y2="0"
-                style={{ stroke: "#999966", strokeWidth: "15" }}
-              />
-            </svg>
-          </div>
-          <div style={{ margin: "0px 15px" }}>
-            <div>
-              <img
-                src={require("./images/image2.jpg")}
-                alt="image2"
-                width="350px"
-                height="250px"
-              />
-            </div>
-            <div
+              <svg height="50" width="100">
+                <line
+                  x1="100"
+                  y1="0"
+                  x2="0"
+                  y2="0"
+                  style={{ stroke: "#999966", strokeWidth: "15" }}
+                />
+              </svg>
+            </Col>
+            <Col lg={3} sm={12}>
+              <div style={{}}>
+                <img
+                  src={require("./images/image2.jpg")}
+                  alt="image2"
+                  width="100%"
+                  height="100%"
+                />
+              </div>
+            </Col>
+            <Col
+              lg={2.25}
               style={{
                 display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-
-                marginTop: "15px"
+                justifyContent: "center",
+                alignItems: "center"
               }}
             >
-              <p>Image 2</p>
-            </div>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              justifyContent: "center"
-            }}
-          >
-            <svg height="50" width="100">
-              <line
-                x1="100"
-                y1="0"
-                x2="0"
-                y2="0"
+              <svg height="50" width="100">
+                <line
+                  x1="100"
+                  y1="0"
+                  x2="0"
+                  y2="0"
+                  style={{ stroke: "#999966", strokeWidth: "15" }}
+                />
+              </svg>
+            </Col>
+            <Col lg={3} sm={12}>
+              <div style={{}}>
+                <div>
+                  <img
+                    src={require("./images/image3.jpg")}
+                    alt="image3"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={4}>
+              <p
                 style={{
-                  stroke: "#999966",
-                  strokeWidth: "15"
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  marginTop: "15px"
                 }}
-              />
-            </svg>
-          </div>
-          <div style={{ marginLeft: "15px" }}>
-            <div>
-              <img
-                src={require("./images/image3.jpg")}
-                alt="image3"
-                width="350px"
-                height="250px"
-              />
-            </div>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                marginTop: "15px"
-              }}
-            >
-              <p>Image 3</p>
-            </div>
-          </div>
-        </div>
+              >
+                Image 1
+              </p>
+            </Col>
+            <Col lg={4}>
+              <p
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  marginTop: "15px"
+                }}
+              >
+                Image 2
+              </p>
+            </Col>
+            <Col lg={4}>
+              <p
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  marginTop: "15px"
+                }}
+              >
+                Image 3
+              </p>
+            </Col>
+          </Row>
+        </Container>
       </div>
     );
   }
