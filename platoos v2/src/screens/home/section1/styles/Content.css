@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* background-color: brown; */
+}
+/* Desktops Devices*/
+@media only screen and (max-width: 1800px) {
+  .slider {
+    /* background-color: black; */
+    width: 100%;
+  }
+  .context-body {
+    /* background-color: brown; */
+    padding: 2%;
+    margin: 5%;
+    width: 100%;
+    height: 100%;
+  }
+  .title-1 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 50px;
+  }
+  .title-2 {
+    font-size: 25px;
+    line-height: 50px;
+  }
+  .paragraph {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .slider {
+    /* background-color: black; */
+    width: 100%;
+  }
+  .context-body {
+    background-color: greenyellow;
+    /* padding: 25%;
+    margin: 0%; */
+
+    width: 100%;
+    height: 100%;
+  }
+  .title-1 {
+    font-size: 20px;
+    font-weight: bold;
+    /* line-height: 20px; */
+  }
+  .title-2 {
+    font-size: 15px;
+    /* line-height: 50px; */
+  }
+  .paragraph {
+    font-size: 15px;
+    /* line-height: 20px; */
+  }
+}
+/* Medium Devices */
+@media only screen and (max-width: 768px) {
+  .slider {
+    /* background-color: black; */
+    width: 100%;
+  }
+  .context-body {
+    /* background-color: red; */
+    margin-top: 10%;
+    padding: 5%;
+    margin: 5%;
+    width: 100%;
+    height: 100%;
+  }
+  .title-1 {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .title-2 {
+    font-size: 18px;
+    /* line-height: 30px; */
+  }
+  .paragraph {
+    font-size: 15px;
+    /* line-height: 25px; */
+  }
+}
+
+/* Smaller Devices */
+@media only screen and (max-width: 540px) {
+  .slider {
+    background-color: black;
+    width: 100%;
+  }
+  .context-body {
+    /* background-color: orangered; */
+    margin-top: 10%;
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+  }
+  .title-1 {
+    /* font-weight: bold; */
+    font-size: 25px;
+    /* line-height: 50px; */
+  }
+  .title-2 {
+    /* font-weight: normal; */
+    font-size: 20px;
+    /* line-height: 50px; */
+  }
+  .paragraph {
+    font-size: 15px;
+    /* line-height: 30px; */
+  }
+}
