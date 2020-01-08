@@ -23,9 +23,7 @@ const App = () => {
         <Route path="/not-found" component={NotFound} />
         <Redirect to="/not-found" />
       </Switch>
-      <footer style={{ marginTop: "5%" }}>
-        <Footer />
-      </footer>
+      <footer style={{ marginTop: "5%" }}>{/* <Footer /> */}</footer>
     </div>
   );
 };

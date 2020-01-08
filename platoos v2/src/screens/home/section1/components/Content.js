@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Button from "react-bootstrap/Button";
-import "../styles/Content.css";
+// import "../styles/Content.css";
+import "../../../../styles/customFonts/fonts.css";
 
 class Content extends Component {
   state = {};
@@ -8,27 +8,21 @@ class Content extends Component {
     return (
       <div
         style={{
-          fontFamily: "'Nunito', sans-serif",
+          // fontFamily: "'Nunito', sans-serif",
           margin: "0%"
         }}
-        className="context-body"
+        // className="context-body"
       >
         <div>
           <p
             style={{
               margin: "0%"
             }}
-            className="title-1"
+            className="title-lg"
           >
-            Food For Every Kind Of Hunger
-          </p>
-          <p
-            style={{
-              margin: "0%"
-            }}
-            className="title-2"
-          >
-            India's Fastest Growing Food Start-up
+            Food subscription
+            <br />
+            at <b className="currency">&#x20B9; 50</b> per meal
           </p>
           <p
             style={
@@ -36,13 +30,22 @@ class Content extends Component {
                 // margin: "0%"
               }
             }
-            className="paragraph"
+            // className="paragraph"
           >
-            Do check out for our Services
+            Subscribe to our meal plans and forget to have to worry about
+            <br />
+            getting clean, nutritious and delicious food!
           </p>
         </div>
         <div className="btn">
-          <Button variant="outline-info">Checkout</Button>
+          <a href="https://www.google.com" target="_blank">
+            <img
+              src={require("../images/google_icon.png")}
+              alt="google_icon"
+              width="200px"
+              height="65px"
+            />
+          </a>
         </div>
       </div>
     );

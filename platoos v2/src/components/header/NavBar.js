@@ -7,13 +7,13 @@ class NavBar extends Component {
   render() {
     return (
       <div style={{ display: "flex" }}>
-        <nav className="navbar navbar-light" style={{ marginLeft: "20px" }}>
+        <nav className="navbar navbar-light" style={{ marginLeft: "50px" }}>
           <a className="navbar-brand" href="#">
             <span style={{ marginLeft: "15px" }}>Platoos</span>
           </a>
           <div
             style={{
-              marginLeft: "350px"
+              marginLeft: "550px"
             }}
           >
             <ul className="nav">
@@ -63,9 +63,19 @@ class NavBar extends Component {
                   Pricing
                 </NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink
+                  to="/pricing"
+                  className="nav-link"
+                  style={{
+                    color: "blue"
+                  }}
+                >
+                  <Auth />
+                </NavLink>
+              </li>
             </ul>
           </div>
-          <Auth />
         </nav>
       </div>
     );

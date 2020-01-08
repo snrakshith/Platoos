@@ -1,0 +1,39 @@
+/* Fonts Usage */
+@import "./configFonts.css";
+
+.logo-font {
+  font-size: 20px;
+  font-family: "'Nunito-Bold', sans-serif";
+  font-style: bold;
+  color: #080040;
+}
+
+.title-lg {
+  font-size: 50px;
+  font-family: "'Nunito-Bold', sans-serif";
+  font-style: bold;
+  color: #080040;
+}
+
+.title-sm {
+  font-size: 30px;
+  font-family: "'Nunito-Bold', sans-serif";
+  font-style: bold;
+  color: #080040;
+}
+
+.paragraph-font {
+  font-size: 20px;
+  font-family: "'Nunito', sans-serif";
+  font-style: normal;
+  color: #6a6a6a;
+}
+
+.currency {
+  color: #fbaf02;
+  font-size: 50px;
+  font-family: "'Nunito', sans-serif";
+}
+
+.btn {
+}

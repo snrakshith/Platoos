@@ -1,4 +1,4 @@
-import React, { Component } from "./node_modules/react";
+import React, { Component } from "react";
 import LoginModal from "../modals/LoginModal";
 
 class Auth extends Component {
@@ -18,7 +18,7 @@ class Auth extends Component {
         style={{
           display: "flex",
           flexDirection: "row",
-          marginLeft: "150px"
+          marginLeft: "0px"
         }}
       >
         <div>
@@ -27,8 +27,11 @@ class Auth extends Component {
             hideModal={this.closeModal}
           />
           <button
-            className="btn btn-outline-info btn-lg"
-            style={{ padding: "2.5px 40px" }}
+            className="btn btn-outline-info "
+            style={{
+              padding: "5px 55px",
+              boxShadow: "0px 0px 5px 0px grey"
+            }}
             onClick={this.showModal}
           >
             Login

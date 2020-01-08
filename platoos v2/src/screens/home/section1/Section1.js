@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Content from "./components/Content";
-import Slider from "../../../components/slider/Slider";
+// import Slider from "../../../components/slider/Slider";
 // import Navbar from "../NavBar";
 
 class Section1 extends Component {
@@ -44,10 +44,14 @@ class Section1 extends Component {
                 justifyContent: "center"
                 // backgroundColor: "orange"
               }}
-              className="slider"
+              // className="slider"
             >
-              <Slider />
-              {/* <Slider img={} des={this.state}/> */}
+              <img
+                src={require("./images/fake_icon.jpeg")}
+                alt="logo"
+                width="450px"
+                height="350px"
+              />
             </div>
           </Col>
         </Row>
