@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../../../../styles/customFonts/fonts.css";
 
 class Choice extends Component {
   state = {};
@@ -12,10 +13,10 @@ class Choice extends Component {
         }}
       >
         <div>
-          <h3>Your Choice</h3>
+          <h3 className="title-sm">Your Choice</h3>
         </div>
         <div>
-          <p>Choose your preferred dish daily</p>
+          <p className="paragraph-font">Choose your preferred dish daily</p>
         </div>
         <div>
           <form>
@@ -25,6 +26,7 @@ class Choice extends Component {
                 borderRadius: "25px",
                 textAlignLast: "center"
               }}
+              className="paragraph-font"
             >
               <option>Near Reva University, Kattigenahalli</option>
               <br />

@@ -22,15 +22,13 @@ class Content extends Component {
           >
             Food subscription
             <br />
-            at <b className="currency">&#x20B9; 50</b> per meal
+            at <span className="currency">&#x20B9;50</span> per meal.
           </p>
           <p
-            style={
-              {
-                // margin: "0%"
-              }
-            }
-            // className="paragraph"
+            style={{
+              marginTop: "2%"
+            }}
+            className="paragraph-font"
           >
             Subscribe to our meal plans and forget to have to worry about
             <br />
@@ -40,6 +38,7 @@ class Content extends Component {
         <div className="btn">
           <a href="https://www.google.com" target="_blank">
             <img
+              style={{ marginRight: "75px" }}
               src={require("../images/google_icon.png")}
               alt="google_icon"
               width="200px"

@@ -20,19 +20,10 @@ class Schedule extends Component {
           }}
         >
           <div>
-            <button
-              style={{
-                borderRadius: "50%",
-                padding: "20px",
-                backgroundColor: "yellow",
-                border: "1.5px solid yellow"
-              }}
-            >
-              20
-            </button>
+            <button className="circular-btn">20</button>
           </div>
           <div style={{ marginTop: "10px" }}>
-            <p>Today</p>
+            <p className="paragraph-font">Today</p>
           </div>
         </div>
         <div
@@ -44,19 +35,10 @@ class Schedule extends Component {
           }}
         >
           <div>
-            <button
-              style={{
-                borderRadius: "50%",
-                padding: "20px",
-                backgroundColor: "white",
-                border: "1.5px solid grey"
-              }}
-            >
-              21
-            </button>
+            <button className="circular-btn">21</button>
           </div>
           <div style={{ marginTop: "10px" }}>
-            <p>Tomorrow</p>
+            <p className="paragraph-font">Tomorrow</p>
           </div>
         </div>
         <div
@@ -68,19 +50,10 @@ class Schedule extends Component {
           }}
         >
           <div>
-            <button
-              style={{
-                borderRadius: "50%",
-                padding: "20px",
-                backgroundColor: "white",
-                border: "1.5px solid grey"
-              }}
-            >
-              22
-            </button>
+            <button className="circular-btn">22</button>
           </div>
           <div style={{ marginTop: "10px" }}>
-            <p>Monday</p>
+            <p className="paragraph-font">Monday</p>
           </div>
         </div>
         <div
@@ -92,19 +65,10 @@ class Schedule extends Component {
           }}
         >
           <div>
-            <button
-              style={{
-                borderRadius: "50%",
-                padding: "20px",
-                backgroundColor: "white",
-                border: "1.5px solid grey"
-              }}
-            >
-              23
-            </button>
+            <button className="circular-btn">23</button>
           </div>
           <div style={{ marginTop: "10px" }}>
-            <p>Tuesday</p>
+            <p className="paragraph-font">Tuesday</p>
           </div>
         </div>
         <div
@@ -116,19 +80,10 @@ class Schedule extends Component {
           }}
         >
           <div>
-            <button
-              style={{
-                borderRadius: "50%",
-                padding: "20px",
-                backgroundColor: "white",
-                border: "1.5px solid grey"
-              }}
-            >
-              24
-            </button>
+            <button className="circular-btn">24</button>
           </div>
           <div style={{ marginTop: "10px" }}>
-            <p>Wednesday</p>
+            <p className="paragraph-font">Wednesday</p>
           </div>
         </div>
         <div
@@ -140,19 +95,10 @@ class Schedule extends Component {
           }}
         >
           <div>
-            <button
-              style={{
-                borderRadius: "50%",
-                padding: "20px",
-                backgroundColor: "white",
-                border: "1.5px solid grey"
-              }}
-            >
-              25
-            </button>
+            <button className="circular-btn">25</button>
           </div>
           <div style={{ marginTop: "10px" }}>
-            <p>Thursday</p>
+            <p className="paragraph-font">Thursday</p>
           </div>
         </div>
         <div
@@ -164,19 +110,10 @@ class Schedule extends Component {
           }}
         >
           <div>
-            <button
-              style={{
-                borderRadius: "50%",
-                padding: "20px",
-                backgroundColor: "white",
-                border: "1.5px solid grey"
-              }}
-            >
-              26
-            </button>
+            <button className="circular-btn">26</button>
           </div>
           <div style={{ marginTop: "10px" }}>
-            <p>Friday</p>
+            <p className="paragraph-font">Friday</p>
           </div>
         </div>
       </div>

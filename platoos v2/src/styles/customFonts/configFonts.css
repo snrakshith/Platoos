@@ -16,6 +16,10 @@
   font-family: Nunito-ExtraBold;
 }
 @font-face {
+  src: url("./fonts/Nunito-ExtraLightItalic.ttf") format(ttf);
+  font-family: Nunito-ExtraLightItalic;
+}
+@font-face {
   src: url("./fonts/Nunito-Light.ttf") format(ttf);
   font-family: Nunito-light;
 }

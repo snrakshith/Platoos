@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container, Col, Row } from "react-bootstrap";
-// import "../../../../styles/global.css";
+import "../../../../styles/customFonts/fonts.css";
 
 class Banner extends Component {
   state = {};
@@ -34,13 +34,13 @@ class Banner extends Component {
                   width="300px"
                 />
                 <br />
-                <h5 className="">Subcribe to a plan</h5>
+                <h5 className="title-sm">Subcribe to a plan</h5>
                 <p
                   style={{
-                    display: "flex",
-                    padding: "5%"
+                    display: "flex"
+                    // padding: "5%"
                   }}
-                  // className="secondary-font"
+                  className="paragraph-font"
                 >
                   Subcribe to one of our plan and choose <br />
                   your preferred type of food
@@ -66,12 +66,13 @@ class Banner extends Component {
                 />
                 <br />
 
-                <h5>We prepare the food </h5>
+                <h5 className="title-sm">We prepare the food </h5>
                 <p
                   style={{
-                    display: "flex",
-                    padding: "5%"
+                    display: "flex"
+                    // padding: "5%"
                   }}
+                  className="paragraph-font"
                 >
                   Our hand selected chefs prepare <br /> your meals in our state
                   of the art kitchens
@@ -96,12 +97,13 @@ class Banner extends Component {
                   width="300px"
                 />
                 <br />
-                <h5>Food at pickup points</h5>
+                <h5 className="title-sm">Food at pickup points</h5>
                 <p
                   style={{
-                    display: "flex",
-                    padding: "5%"
+                    display: "flex"
+                    // padding: "5%"
                   }}
+                  className="paragraph-font"
                 >
                   Collect your food by visiting the <br />
                   pickup points that are located near you
