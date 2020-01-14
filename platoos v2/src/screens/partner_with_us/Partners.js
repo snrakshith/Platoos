@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import Section1 from "./section1/Section1";
-import Section2 from "./section2/components/Verification";
+// import Section1 from "./section1/Section1";
 
 class Partners extends Component {
   state = {};
@@ -8,13 +7,7 @@ class Partners extends Component {
     return (
       <div>
         <main>
-          <div style={{ marginTop: "5%" }}>
-            <Section1 />
-          </div>
-          <div style={{ marginTop: "5%" }}>
-            <Section2 />
-          </div>
-          <div style={{}}></div>
+          <div style={{ marginTop: "5%" }}>{/* <Section1 /> */}</div>
         </main>
       </div>
     );

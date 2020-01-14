@@ -18,7 +18,7 @@ class Section4 extends Component {
         <div>
           <Choice />
         </div>
-        <div style={{ marginTop: "60px" }}>
+        <div style={{ marginTop: "40px" }}>
           <Schedule />
         </div>
         <div style={{ marginTop: "25px" }}>

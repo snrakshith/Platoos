@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "../styles/Pickup.css";
 class Pickup extends Component {
   state = {};
   render() {
@@ -8,7 +8,7 @@ class Pickup extends Component {
         style={{
           display: "flex",
           flexDirection: "column",
-          width: "450px"
+          width: "400px"
           //   justifyContent: "center",
           //   alignItems: "center"
         }}
@@ -21,21 +21,22 @@ class Pickup extends Component {
             alignItems: "center"
           }}
         >
-          <h3>Pickup Points</h3>
-          <p>Your dishes will be delivered here</p>
+          <h3 className="pickup-title">Pickup Points</h3>
+          <p className="pickup-caption">Your dishes will be delivered here</p>
         </div>
         <div
           style={{
             display: "flex",
             flexDirection: "column",
-            width: "100%"
+            marginTop: "15px"
+            // width: "100%"
           }}
         >
           <button
             type="button"
-            // className="btn btn-outline-secondary "
+            className="btn-txt"
             style={{
-              padding: "15px",
+              padding: "10px",
               backgroundColor: "#fbaf02",
               color: "white",
               borderRadius: "50px",
@@ -47,10 +48,10 @@ class Pickup extends Component {
           </button>
           <button
             type="button"
-            className="btn btn-outline-secondary"
+            className="btn btn-outline-secondary btn-text"
             style={{
               marginBottom: "20px",
-              padding: "15px",
+              padding: "10px",
               borderRadius: "50px"
             }}
           >
@@ -58,10 +59,10 @@ class Pickup extends Component {
           </button>
           <button
             type="button"
-            className="btn btn-outline-secondary"
+            className="btn btn-outline-secondary btn-text"
             style={{
               marginBottom: "20px",
-              padding: "15px",
+              padding: "10px",
               borderRadius: "50px"
             }}
           >
@@ -69,10 +70,10 @@ class Pickup extends Component {
           </button>
           <button
             type="button"
-            className="btn btn-outline-secondary"
+            className="btn btn-outline-secondary btn-text"
             style={{
               marginBottom: "20px",
-              padding: "15px",
+              padding: "10px",
               borderRadius: "50px"
             }}
           >

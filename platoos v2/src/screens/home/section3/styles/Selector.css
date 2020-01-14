@@ -1,0 +1,24 @@
+/* paragraph , title-md , currency */
+
+.selector-title {
+  font-size: 30px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: medium;
+  color: #080040;
+}
+
+.selector-paragraph {
+  font-size: 16px;
+  font-family: "Nunito";
+  /* font-style: normal; */
+  line-height: 10px;
+  font-weight: lighter;
+  color: #6a6a6a;
+}
+
+.selector-currency {
+  color: #fbaf02;
+  font-size: 30px;
+  font-weight: bold;
+}

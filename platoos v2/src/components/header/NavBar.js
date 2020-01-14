@@ -2,18 +2,27 @@ import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import Auth from "../auth/Auth";
+import "./NavBar.css";
 
 class NavBar extends Component {
   render() {
     return (
       <div style={{ display: "flex" }}>
         <nav className="navbar navbar-light" style={{ marginLeft: "50px" }}>
-          <a className="navbar-brand" href="#">
-            <span style={{ marginLeft: "15px" }}>Platoos</span>
-          </a>
+          <span
+            style={{
+              marginLeft: "15px",
+              fontSize: "35px",
+              fontFamily: "Nunito",
+              color: "#463fb5"
+            }}
+          >
+            Platoos
+          </span>
+
           <div
             style={{
-              marginLeft: "550px"
+              marginLeft: "450px"
             }}
           >
             <ul className="nav">
@@ -68,7 +77,8 @@ class NavBar extends Component {
                   to="/pricing"
                   className="nav-link"
                   style={{
-                    color: "blue"
+                    color: "blue",
+                    marginLeft: "25px"
                   }}
                 >
                   <Auth />

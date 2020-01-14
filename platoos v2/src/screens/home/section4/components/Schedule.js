@@ -1,8 +1,24 @@
 import React, { Component } from "react";
+import "../styles/Schedule.css";
 
 class Schedule extends Component {
-  state = {};
+  state = {
+    schedule: [
+      { date: 20, day: "Today" },
+      { date: 21, day: "Tommorow" },
+      { date: 22, day: "Monday" },
+      { date: 23, day: "Tuesday" },
+      { date: 24, day: "Wednesday" },
+      { date: 25, day: "Thursday " },
+      { date: 26, day: "Friday " }
+    ]
+  };
   render() {
+    const content = this.state.schedule.map(date => {
+      <li>{date}</li>;
+    });
+    console.log(content);
+
     return (
       <div
         style={{
@@ -12,28 +28,15 @@ class Schedule extends Component {
           justifyContent: "center"
         }}
       >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center"
-          }}
-        >
+        <div style={{ marginLeft: "0px" }} className="container-schedule">
           <div>
-            <button className="circular-btn">20</button>
+            <button className="selected-circular-btn">20</button>
           </div>
           <div style={{ marginTop: "10px" }}>
-            <p className="paragraph-font">Today</p>
+            <p className="selected-paragraph-font">Today</p>
           </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            marginLeft: "30px"
-          }}
-        >
+        <div className="container-schedule">
           <div>
             <button className="circular-btn">21</button>
           </div>
@@ -41,14 +44,7 @@ class Schedule extends Component {
             <p className="paragraph-font">Tomorrow</p>
           </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            marginLeft: "30px"
-          }}
-        >
+        <div className="container-schedule">
           <div>
             <button className="circular-btn">22</button>
           </div>
@@ -56,14 +52,7 @@ class Schedule extends Component {
             <p className="paragraph-font">Monday</p>
           </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            marginLeft: "35px"
-          }}
-        >
+        <div className="container-schedule">
           <div>
             <button className="circular-btn">23</button>
           </div>
@@ -71,14 +60,7 @@ class Schedule extends Component {
             <p className="paragraph-font">Tuesday</p>
           </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            marginLeft: "30px"
-          }}
-        >
+        <div className="container-schedule">
           <div>
             <button className="circular-btn">24</button>
           </div>
@@ -86,14 +68,7 @@ class Schedule extends Component {
             <p className="paragraph-font">Wednesday</p>
           </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            marginLeft: "30px"
-          }}
-        >
+        <div className="container-schedule">
           <div>
             <button className="circular-btn">25</button>
           </div>
@@ -101,14 +76,7 @@ class Schedule extends Component {
             <p className="paragraph-font">Thursday</p>
           </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            marginLeft: "30px"
-          }}
-        >
+        <div className="container-schedule">
           <div>
             <button className="circular-btn">26</button>
           </div>

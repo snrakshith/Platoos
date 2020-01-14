@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import PartnerForm from "./components/PartnerForm";
+// import PartnerForm from "./components/PartnerForm";
 
 class Section1 extends Component {
   state = {};
@@ -14,9 +14,7 @@ class Section1 extends Component {
           // marginTop: "5%"
         }}
       >
-        <div>
-          <PartnerForm />
-        </div>
+        <div>{/* <PartnerForm /> */}</div>
         <div
           style={{
             marginLeft: "5%",

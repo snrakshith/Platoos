@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Pickup from "./components/Pickup";
-import Map from "../../../components/map/Map";
+import Map from "../../../components/map/Track";
 
 class Section5 extends Component {
   state = {};
@@ -16,9 +16,8 @@ class Section5 extends Component {
         <div>
           <Pickup />
         </div>
-        <div>
-          {/* <Map /> */}
-          <h3>Map Component</h3>
+        <div style={{ marginLeft: "75px" }}>
+          <Map />
         </div>
       </div>
     );

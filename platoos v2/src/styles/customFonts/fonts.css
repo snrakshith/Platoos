@@ -1,36 +1,36 @@
 /* Fonts Usage */
 @import "./configFonts.css";
 
-.logo-font {
-  font-size: 20px;
-  font-family: "'Nunito-Regular', sans-serif";
-  font-style: bold;
-  /* color: #080040; */
-  color: blueviolet;
-}
-
 .title-lg {
-  font-size: 50px;
-  /* font-family: "Nunito-Bold"; */
-  font-weight: 175px;
-  line-height: 60px;
+  font-size: 60px;
+  font-family: "Nunito";
+  font-weight: lighter;
+  line-height: 65px;
   color: #080040;
   letter-spacing: 0px;
 }
 
-.title-sm {
-  font-size: 23px;
-  /* font-family: "Nunito-Bold"; */
-  font-style: bold;
+.title-md {
+  font-size: 30px;
+  font-family: "Nunito";
+  font-style: normal;
   font-weight: medium;
   color: #080040;
 }
 
+.title-sm {
+  font-size: 23px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: normal;
+  color: #080040;
+}
+
 .paragraph-font {
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Nunito";
   /* font-style: normal; */
-  line-height: 25px;
+  line-height: 10px;
   font-weight: lighter;
   text-align: center;
   color: #6a6a6a;
@@ -38,26 +38,6 @@
 
 .currency {
   color: #fbaf02;
-  font-size: 45px;
+  font-size: 55px;
   font-weight: bold;
-}
-
-.btn-serve {
-  color: white;
-  font-family: "Nunito-ExtraLightItalic";
-  /* font-weight: bold; */
-  font-size: 14px;
-  background-color: rgb(91, 47, 173);
-  padding: 10px;
-  border-radius: 50px;
-  width: 280px;
-}
-
-.circular-btn {
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  vertical-align: center;
-  background-color: white;
-  border: 1.5px solid grey;
 }

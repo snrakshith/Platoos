@@ -23,7 +23,7 @@ class Card extends Component {
           }}
         >
           <div style={{ margin: "25px 50px" }}>
-            <p style={{ fontSize: "25px", color: "white" }}>platoos</p>
+            <p style={{ fontSize: "25px", color: "white" }}>Platoos</p>
           </div>
           <div
             style={{

@@ -34,7 +34,7 @@ class Home extends Component {
           <div style={{ marginTop: "10%" }}>
             <Section4 />
           </div>
-          <div style={{ marginTop: "10%" }}>
+          <div style={{ margin: "10% 0% 10% 0%" }}>
             <Section5 />
           </div>
         </main>

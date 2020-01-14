@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import "../../../../styles/customFonts/fonts.css";
+import "../styles/Serve.css";
 class Serve extends Component {
   render() {
     return (
       <div>
-        <button type="button" className="btn-serve">
+        <button type="button" className="serve-btn">
           FOOD WE SERVE
         </button>
       </div>

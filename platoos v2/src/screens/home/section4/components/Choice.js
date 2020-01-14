@@ -13,9 +13,9 @@ class Choice extends Component {
         }}
       >
         <div>
-          <h3 className="title-sm">Your Choice</h3>
+          <h3 className="title-md">Your Choice</h3>
         </div>
-        <div>
+        <div style={{}}>
           <p className="paragraph-font">Choose your preferred dish daily</p>
         </div>
         <div>
