@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.css";
+import React, { Component } from "./node_modules/react";
+import { NavLink } from "./node_modules/react-router-dom";
+import "./node_modules/bootstrap/dist/css/bootstrap.css";
 import Auth from "../auth/Auth";
 import "./NavBar.css";
 

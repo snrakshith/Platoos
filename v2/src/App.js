@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
-import NavBar from "./components/header/NavBar";
+import NavBar from "./components/navbar/NavBar";
 
 import Pricing from "./screens/pricing/Pricing";
 import Home from "./screens/home/Home";
