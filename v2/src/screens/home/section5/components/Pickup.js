@@ -3,6 +3,7 @@ import classNames from "classnames";
 import "../styles/Pickup.css";
 class Pickup extends Component {
   state = {
+    clickStatus: false,
     points: [
       {
         locationName: "Near Reva University, Kattigenahalli",
@@ -10,13 +11,20 @@ class Pickup extends Component {
         longitude: 17
       },
       { locationName: "Near Manyatha, Hennur", latitude: 11, longitude: 12 },
+      { locationName: "Near Xyz, Abcd", latitude: 0, longitude: 0 },
       { locationName: "Near Xyz, Abcd", latitude: 0, longitude: 0 }
     ]
   };
+  onButtonChange() {
+    this.setState({
+      clickStatus: true
+    });
+  }
   render() {
-    let btnStyles = classNames({
-      "btn btn-outline-secondary btn-text": true,
-      "btn-text": false
+    let btnClass = classNames({
+      "selected-btn-styles": this.state.clickStatus,
+      "btn btn-outline-secondary  unselected-btn-styles": !this.state
+        .clickStatus
     });
     return (
       <div
@@ -40,6 +48,9 @@ class Pickup extends Component {
           <p className="pickup-caption">Your dishes will be delivered here</p>
         </div>
         <div
+          className="btn-toolbar"
+          role="toolbar"
+          ariaLabel="group"
           style={{
             display: "flex",
             flexDirection: "column",
@@ -47,56 +58,19 @@ class Pickup extends Component {
             // width: "100%"
           }}
         >
-          {/* {this.state.points.map(point => {
-            return <button>{point.locationName}</button>;
-          })} */}
-          <button
-            type="button"
-            className="btn-txt"
-            style={{
-              padding: "10px",
-              backgroundColor: "#fbaf02",
-              color: "white",
-              borderRadius: "50px",
-              marginBottom: "20px"
-            }}
-          >
-            {/* <p>Near Reva University, Kattigenahalli</p> */}
-            Near Reva University, Kattigenahalli
-          </button>
-          <button
-            type="button"
-            className="btn btn-outline-secondary btn-text"
-            style={{
-              marginBottom: "20px",
-              padding: "10px",
-              borderRadius: "50px"
-            }}
-          >
-            Near Manyatha, Hennur
-          </button>
-          <button
-            type="button"
-            className="btn btn-outline-secondary btn-text"
-            style={{
-              marginBottom: "20px",
-              padding: "10px",
-              borderRadius: "50px"
-            }}
-          >
-            Near Xyz, Abcd
-          </button>
-          <button
-            type="button"
-            className="btn btn-outline-secondary btn-text"
-            style={{
-              marginBottom: "20px",
-              padding: "10px",
-              borderRadius: "50px"
-            }}
-          >
-            Near Xyz, Abcd
-          </button>
+          {/* <div className="btn-group" role="group" ariaLabel="groups"> */}
+          {this.state.points.map(point => {
+            return (
+              <button
+                type="button"
+                className={`btn-text ${btnClass}`}
+                onClick={this.onButtonChange.bind(this)}
+              >
+                {point.locationName}
+              </button>
+            );
+          })}
+          {/* </div> */}
         </div>
       </div>
     );

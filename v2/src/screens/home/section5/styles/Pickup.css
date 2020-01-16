@@ -25,3 +25,17 @@
   text-align: center;
   color: #6a6a6a;
 }
+
+.unselected-btn-styles {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+}
+
+.selected-btn-styles {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  background-color: #fbaf02;
+  color: white;
+}

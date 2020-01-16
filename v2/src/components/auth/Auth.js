@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+import { Link, Route } from "react-router-dom";
 import LoginModal from "../modals/LoginModal";
-
+import Home from "../../screens/home/Home";
+<Route path="/auth" component={Home} />;
 class Auth extends Component {
   state = {
     displayModal: false
