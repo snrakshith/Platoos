@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import Hover from "./hover/Hover";
 import "../styles/Menu.css";
 
 class Menu extends Component {
   state = {
+    hoverEffect: false,
     resources: [
       {
         status: "Breakfast",
@@ -21,6 +23,11 @@ class Menu extends Component {
       }
     ]
   };
+  handleMouseHover() {
+    this.setState({
+      hoverEffect: !this.state.hoverEffect
+    });
+  }
 
   render() {
     // let resources = ["fake_icon", "fake_icon", "fake_icon"];
@@ -50,7 +57,15 @@ class Menu extends Component {
         >
           <p className="menu-paragraph">Breakfast</p>
         </div>
-        <div style={{}}>{icon}</div>
+        <div
+          style={{}}
+          onMouseEnter={this.handleMouseHover.bind(this)}
+          onMouseLeave={this.handleMouseHover.bind(this)}
+        >
+          {/* {icon} */}
+          {this.state.hoverEffect && <Hover /> ? <Hover /> : icon}
+          {/* {this.state.hoverEffect && <Hover /> } */}
+        </div>
       </div>
     );
   }

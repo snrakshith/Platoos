@@ -1,8 +1,23 @@
 import React, { Component } from "react";
+import classNames from "classnames";
 import "../styles/Pickup.css";
 class Pickup extends Component {
-  state = {};
+  state = {
+    points: [
+      {
+        locationName: "Near Reva University, Kattigenahalli",
+        latitude: 14,
+        longitude: 17
+      },
+      { locationName: "Near Manyatha, Hennur", latitude: 11, longitude: 12 },
+      { locationName: "Near Xyz, Abcd", latitude: 0, longitude: 0 }
+    ]
+  };
   render() {
+    let btnStyles = classNames({
+      "btn btn-outline-secondary btn-text": true,
+      "btn-text": false
+    });
     return (
       <div
         style={{
@@ -32,6 +47,9 @@ class Pickup extends Component {
             // width: "100%"
           }}
         >
+          {/* {this.state.points.map(point => {
+            return <button>{point.locationName}</button>;
+          })} */}
           <button
             type="button"
             className="btn-txt"

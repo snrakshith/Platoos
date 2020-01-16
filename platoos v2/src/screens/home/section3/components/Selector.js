@@ -20,7 +20,11 @@ class Selector extends Component {
                 alignItems: "center"
               }}
             >
-              <input type="radio" style={{ width: "25px", height: "25px" }} />
+              <input
+                type="radio"
+                name="price"
+                style={{ width: "25px", height: "25px" }}
+              />
             </div>
             <div style={{ marginLeft: "20px" }}>
               <p className="selector-title">
@@ -45,7 +49,11 @@ class Selector extends Component {
                 alignItems: "center"
               }}
             >
-              <input type="radio" style={{ width: "25px", height: "25px" }} />
+              <input
+                type="radio"
+                name="price"
+                style={{ width: "25px", height: "25px" }}
+              />
             </div>
             <div style={{ marginLeft: "20px" }}>
               <p className="selector-title">
@@ -71,7 +79,11 @@ class Selector extends Component {
                 alignItems: "center"
               }}
             >
-              <input type="radio" style={{ width: "25px", height: "25px" }} />
+              <input
+                type="radio"
+                name="price"
+                style={{ width: "25px", height: "25px" }}
+              />
             </div>
             <div style={{ marginLeft: "20px" }}>
               <p className="selector-title">
