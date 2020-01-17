@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
-import NavBar from "./components/navbar/NavBar";
-
+// import NavBar from "./components/navbar/NavBar";
+import Navigation from "./components/navbar/Navigation";
 import Pricing from "./screens/pricing/Pricing";
 import Home from "./screens/home/Home";
 import Partners from "./screens/partner_with_us/Partners";
@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div style={{ height: "100%" }}>
       <header style={{}}>
-        <NavBar />
+        <Navigation />
       </header>
       <Switch>
         <Route path="/pricing" component={Pricing} />
