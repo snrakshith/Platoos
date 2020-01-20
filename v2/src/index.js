@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
-// import Hover from "../src/screens/home/section4/components/hover/Hover";
+import Tracker from "../src/components/map/Tracker";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -11,4 +11,4 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-// ReactDOM.render(<Hover />, document.getElementById("root"));
+// ReactDOM.render(<Tracker />, document.getElementById("root"));
