@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import classNames from "classnames";
 import "../styles/Pickup.css";
+import { getKitchens as api } from "../api/api";
+// const api = require("../api/api");
 class Pickup extends Component {
   state = {
     clickStatus: false,
+    address: "",
     points: [
       {
         locationName: "Near Reva University, Kattigenahalli",
@@ -18,6 +21,13 @@ class Pickup extends Component {
   onButtonChange() {
     this.setState({
       clickStatus: true
+    });
+  }
+  async getLocations() {
+    let res = await api.getKitchens();
+    console.log(res);
+    this.setState({
+      address: ""
     });
   }
   render() {
@@ -65,8 +75,10 @@ class Pickup extends Component {
                 type="button"
                 className={`btn-text ${btnClass}`}
                 onClick={this.onButtonChange.bind(this)}
+                onSelect={this.getLocations(this.state.address)}
               >
-                {point.locationName}
+                {/* {point.locationName} */}
+                {this.state.address}
               </button>
             );
           })}
