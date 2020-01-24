@@ -3,7 +3,10 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 // import Tracker from "../src/components/map/Tracker";
-import MenuEx from "../src/experimantal/components/MenuEx";
+import ScheduleEx from "../src/experimantal/components/ScheduleEx";
+import RadioEx from "../src/experimantal/components/RadioEx";
+import PickupEx from "../src/experimantal/components/PickupEx";
+import HoverEx from "../src/experimantal/components/HoverEx";
 
 // ReactDOM.render(
 //   <BrowserRouter>
@@ -12,4 +15,4 @@ import MenuEx from "../src/experimantal/components/MenuEx";
 //   document.getElementById("root")
 // );
 
-ReactDOM.render(<MenuEx />, document.getElementById("root"));
+ReactDOM.render(<RadioEx />, document.getElementById("root"));
