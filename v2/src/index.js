@@ -8,11 +8,11 @@ import RadioEx from "../src/experimantal/components/RadioEx";
 import PickupEx from "../src/experimantal/components/PickupEx";
 import HoverEx from "../src/experimantal/components/HoverEx";
 
-// ReactDOM.render(
-//   <BrowserRouter>
-//     <App />
-//   </BrowserRouter>,
-//   document.getElementById("root")
-// );
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
 
-ReactDOM.render(<RadioEx />, document.getElementById("root"));
+// ReactDOM.render(<HoverEx />, document.getElementById("root"));

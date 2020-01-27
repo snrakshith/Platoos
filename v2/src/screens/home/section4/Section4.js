@@ -1,37 +1,37 @@
 import React, { Component } from "react";
-import Choice from "./components/Choice";
-import Schedule from "./components/Schedule";
-import Menu from "./components/Menu";
-import Serve from "./components/Serve";
+import { Container, Col, Row } from "react-bootstrap";
+import Selector from "./components/Selector";
+import Select from "./components/Select";
+import Card from "./components/Card";
 
-class Section4 extends Component {
+class Section3 extends Component {
   state = {};
   render() {
     return (
       <div
         style={{
           display: "flex",
-          flexDirection: "column",
+          justifyContent: "center",
           alignItems: "center"
         }}
       >
-        <div>
-          <Choice />
-        </div>
-        <div style={{ marginTop: "40px" }}>
-          <Schedule />
-        </div>
-        <div style={{ marginTop: "25px" }}>
-          <Menu />
-          <Menu />
-          <Menu />
-        </div>
-        <div style={{ marginTop: "25px" }}>
-          <Serve />
-        </div>
+        <Container>
+          <Row>
+            <Col xs={12} sm={12} md={12} lg={6}>
+              <div>
+                <Card />
+              </div>
+            </Col>
+            <Col xs={12} sm={12} md={12} lg={6}>
+              <div>
+                <Select />
+              </div>
+            </Col>
+          </Row>
+        </Container>
       </div>
     );
   }
 }
 
-export default Section4;
+export default Section3;
