@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
-import Auth from "../auth/Auth";
+import Auth from "../Auth";
 
 class Navigation extends Component {
   state = {};

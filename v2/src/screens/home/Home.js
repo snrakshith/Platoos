@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Section1 from "./section1/Section1";
-import Section2 from "./section2/components/Banner";
-import Section3 from "./section3/Section3";
-import Section4 from "./section4/Section4";
-import Section5 from "./section5/Section5";
+import Header from "./Header";
+import Banner from "./Banner";
+import MenuList from "./MenuList";
+import Plans from "./Plans";
+import PickupPoints from "./PickupPoints";
 
 // import "./Home.css";
 
@@ -23,19 +23,19 @@ class Home extends Component {
       >
         <main>
           <div style={{ marginTop: "5%" }}>
-            <Section1 />
+            <Header />
           </div>
           <div style={{ marginTop: "5%" }}>
-            <Section2 />
+            <Banner />
           </div>
           <div style={{ marginTop: "10%" }}>
-            <Section3 />
+            <MenuList />
           </div>
           <div style={{ marginTop: "10%" }}>
-            <Section4 />
+            <Plans />
           </div>
           <div style={{ margin: "10% 0% 10% 0%" }}>
-            <Section5 />
+            <PickupPoints />
           </div>
         </main>
       </div>

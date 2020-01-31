@@ -1,0 +1,32 @@
+    <button type="button" className="btn-txt selected-btn-styles">
+             <p>Near Reva University, Kattigenahalli</p> 
+            Near Reva University, Kattigenahalli
+          </button>
+          <button
+            type="button"
+            className="btn btn-outline-secondary btn-text unselected-btn-styles"
+          >
+            Near Manyatha, Hennur
+          </button>
+          <button
+            type="button"
+            className="btn btn-outline-secondary btn-text"
+            style={{
+              marginBottom: "20px",
+              padding: "10px",
+              borderRadius: "50px"
+            }}
+          >
+            Near Xyz, Abcd
+          </button>
+          <button
+            type="button"
+            className="btn btn-outline-secondary btn-text"
+            style={{
+              marginBottom: "20px",
+              padding: "10px",
+              borderRadius: "50px"
+            }}
+          >
+            Near Xyz, Abcd
+          </button>

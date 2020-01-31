@@ -1,0 +1,11 @@
+logo-font {
+  font-size: 20px;
+  font-family: "'Nunito-Regular', sans-serif";
+  font-style: bold;
+  /* color: #080040; */
+  color: blueviolet;
+}
+
+.nav-link {
+  color: "blue";
+}

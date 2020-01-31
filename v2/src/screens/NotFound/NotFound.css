@@ -1,0 +1,40 @@
+.NotFound-title-lg {
+  font-size: 180px;
+  font-family: "Nunito";
+  font-weight: lighter;
+  line-height: 85px;
+  color: rgb(34, 110, 180);
+
+  margin-bottom: 70px;
+  letter-spacing: 0px;
+}
+
+.NotFound-title-md {
+  font-size: 25px;
+  margin-bottom: 18px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: medium;
+  color: rgb(70, 63, 181);
+}
+
+.NotFound-btn {
+  color: white;
+  background-color: rgb(91, 47, 173);
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 20px;
+  width: 250px;
+  font-family: "Nunito";
+}
+
+.NotFound-paragraph-font {
+  font-size: 18px;
+  margin-bottom: 18px;
+  font-family: "Nunito";
+  /* font-style: normal; */
+  line-height: 20px;
+  font-weight: lighter;
+  text-align: center;
+  color: rgb(14, 83, 85);
+}

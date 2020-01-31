@@ -1,0 +1,41 @@
+.pickup-title {
+  font-size: 30px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: medium;
+  color: #080040;
+}
+
+.pickup-caption {
+  font-size: 16px;
+  font-family: "Nunito";
+  /* font-style: normal; */
+  line-height: 10px;
+  font-weight: normal;
+  text-align: center;
+  color: #6a6a6a;
+}
+
+.btn-text {
+  font-size: 15px;
+  font-family: "Nunito";
+  /* font-style: normal; */
+  line-height: 25px;
+  font-weight: lighter;
+  text-align: center;
+  color: #6a6a6a;
+}
+
+.unselected-btn-styles {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+}
+
+.selected-btn-styles {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  background-color: #fbaf02;
+  color: white;
+}

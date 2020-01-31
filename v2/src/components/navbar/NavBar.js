@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.css";
-import Auth from "../auth/Auth";
+import Auth from "../Auth";
 import "./NavBar.css";
 
 class NavBar extends Component {
