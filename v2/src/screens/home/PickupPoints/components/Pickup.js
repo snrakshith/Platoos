@@ -2,41 +2,46 @@ import React, { Component } from "react";
 import classNames from "classnames";
 import "../styles/Pickup.css";
 
-// const api = require("../api/api");
 class Pickup extends Component {
   state = {
-    clickStatus: false,
-    address: "",
-    points: [
-      {
-        locationName: "Near Reva University, Kattigenahalli",
-        latitude: 14,
-        longitude: 17
-      },
-      { locationName: "Near Manyatha, Hennur", latitude: 11, longitude: 12 },
-      { locationName: "Near Xyz, Abcd", latitude: 0, longitude: 0 },
-      { locationName: "Near Xyz, Abcd", latitude: 0, longitude: 0 }
-    ]
+    clicked: false
   };
-  onButtonChange() {
+  onClickChangeStyles = () => {
     this.setState({
-      clickStatus: true
+      clicked: true
     });
-  }
+  };
+
+  btnClass = () => {
+    if (!this.state.clicked === false) {
+      return "selected-btn-styles";
+    } else {
+      return "btn btn-outline-secondary  unselected-btn-styles";
+    }
+  };
+  // let btnClass = classNames({
+  //   "selected-btn-styles": this.state.clicked,
+  //   "btn btn-outline-secondary  unselected-btn-styles": !this.state.clicked
+  // });
+
   render() {
-    let btnClass = classNames({
-      "selected-btn-styles": this.state.clickStatus,
-      "btn btn-outline-secondary  unselected-btn-styles": !this.state
-        .clickStatus
-    });
+    // console.log(this.state.clicked);
+
+    if (this.props === null) {
+      console.log("loading");
+    } else {
+      // console.log(this.props);
+      // console.log(this.props.addressList);
+      // console.log(this.props.setSelectedPoint);
+      // console.log(this.props.selectedPoint);
+    }
+
     return (
       <div
         style={{
           display: "flex",
           flexDirection: "column",
           width: "400px"
-          //   justifyContent: "center",
-          //   alignItems: "center"
         }}
       >
         <div
@@ -62,18 +67,22 @@ class Pickup extends Component {
           }}
         >
           {/* <div className="btn-group" role="group" ariaLabel="groups"> */}
-          {this.state.points.map(point => {
-            return (
-              <button
-                type="button"
-                className={`btn-text ${btnClass}`}
-                onClick={this.onButtonChange.bind(this)}
-              >
-                {/* {point.locationName} */}
-                {/* {this.state.address} */}
-              </button>
-            );
-          })}
+          {this.props.addressList &&
+            this.props.addressList.map(point => {
+              return (
+                <button
+                  type="button"
+                  className={`btn-text ${() => this.btnClass}`}
+                  onClick={() => {
+                    this.props.setSelectedPoint(point);
+                    this.onClickChangeStyles;
+                    // this.zoomEffect;
+                  }}
+                >
+                  {point.name}
+                </button>
+              );
+            })}
         </div>
       </div>
     );

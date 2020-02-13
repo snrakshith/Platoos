@@ -16,7 +16,7 @@ class Hover extends Component {
           height: "280px",
           border: "1.5px solid grey",
           borderRadius: "3.5%",
-          backgroundColor: "#debca2"
+          backgroundColor: "#EEF478"
         }}
       >
         <div style={{}}>
@@ -24,13 +24,8 @@ class Hover extends Component {
             <img
               src={require("./images/fake_icon.jpeg")}
               alt="icon"
-              width="240px"
-              height="120px"
-              style={
-                {
-                  // margin: "0px 0px 0px 13px"
-                }
-              }
+              width="280px"
+              height="140px"
             />
           </div>
           <hr
@@ -43,8 +38,8 @@ class Hover extends Component {
           />
           <div
             style={{
-              display: "flex"
-              // justifyContent: "center"
+              display: "flex",
+              justifyContent: "center"
               // marginRight: "25px " // TODO fix Layouts
             }}
           >
@@ -59,10 +54,10 @@ class Hover extends Component {
             <div>
               <h5
                 style={{
-                  marginLeft: "20px",
-                  marginBottom: "4.5px"
-                  // display: "flex",
-                  // justifyContent: "center"
+                  marginLeft: "15px",
+                  marginBottom: "4.5px",
+                  display: "flex",
+                  justifyContent: "center"
                 }}
               >
                 Special Combo Idli
@@ -73,8 +68,8 @@ class Hover extends Component {
             <p
               style={{
                 display: "flex",
-                // justifyContent: "center",
-                marginLeft: "40px",
+                justifyContent: "center",
+                marginBottom: "5px",
                 color: "grey"
               }}
             >
@@ -84,9 +79,9 @@ class Hover extends Component {
               style={{
                 display: "flex",
                 flexDirection: "row",
-                // justifyContent: "center"
+                justifyContent: "center"
                 // alignItems: "center",
-                marginLeft: "35px"
+                // marginLeft: "15px"
                 // width: "440px"
               }}
             >

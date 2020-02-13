@@ -2,8 +2,23 @@ import React, { Component } from "react";
 import { Container, Col, Row } from "react-bootstrap";
 
 class Card extends Component {
-  state = {};
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  static defaultProps = { daysLeft: 0, mealPoints: 0 };
   render() {
+    if (this.props.selectedPlan === null) {
+      // console.log("loading");
+    } else {
+      // console.log("From Card Component:", this.props.selectedPlan);
+    }
+
+    const daysLeft =
+      this.props.selectedPlan && this.props.selectedPlan.benefits.validity / 24;
+    const mealPoints =
+      this.props.selectedPlan && this.props.selectedPlan.benefits.meal_points;
+    // console.log("From Card Component:", mealPoints, daysLeft);
     return (
       <div
         style={{
@@ -12,9 +27,11 @@ class Card extends Component {
           backgroundColor: "rgb(91, 47, 173)",
           boxShadow: "8px 5px 15px grey",
           height: "200px",
-          width: "400px"
+          width: "400px",
+          marginRight: "70px"
         }}
       >
+        {/* {this.props.selectedPlan.perks} */}
         <Container>
           <Row className=" rowalign-items-end">
             <Col sm={12} md={12} lg={12}>
@@ -27,13 +44,21 @@ class Card extends Component {
                 }}
               >
                 <div style={{ margin: "25px 50px" }}>
-                  <p style={{ fontSize: "25px", color: "white" }}>Platoos</p>
+                  <p
+                    style={{
+                      fontSize: "25px",
+                      fontFamily: "Nunito",
+                      color: "white"
+                    }}
+                  >
+                    Platoos
+                  </p>
                 </div>
                 <div
                   style={{
                     display: "flex",
                     justifyContent: "space-around",
-                    marginTop: "25px"
+                    marginTop: "18px"
                   }}
                 >
                   {/* Card Details */}
@@ -45,7 +70,15 @@ class Card extends Component {
                         //   alignItems: "center"
                       }}
                     >
-                      <p style={{ fontSize: "32px", color: "white" }}>68</p>
+                      <p
+                        style={{
+                          fontSize: "34px",
+                          fontFamily: "Nunito",
+                          color: "white"
+                        }}
+                      >
+                        {mealPoints}
+                      </p>
                     </div>
                     <div
                       style={{
@@ -57,7 +90,9 @@ class Card extends Component {
                     >
                       <p
                         style={{
-                          fontSize: "12px",
+                          fontSize: "11px",
+                          fontFamily: "Nunito",
+                          fontWeight: "lighter",
                           color: "white",
                           marginLeft: "5px"
                         }}
@@ -74,7 +109,15 @@ class Card extends Component {
                         justifyContent: "center"
                       }}
                     >
-                      <p style={{ fontSize: "32px", color: "white" }}>21</p>
+                      <p
+                        style={{
+                          fontSize: "34px",
+                          fontFamily: "Nunito",
+                          color: "white"
+                        }}
+                      >
+                        {daysLeft}
+                      </p>
                     </div>
                     <div
                       style={{
@@ -86,7 +129,8 @@ class Card extends Component {
                     >
                       <p
                         style={{
-                          fontSize: "12px",
+                          fontSize: "11px",
+                          fontFamily: "Nunito",
                           color: "white",
                           marginLeft: "5px"
                         }}

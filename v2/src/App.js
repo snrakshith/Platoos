@@ -15,6 +15,7 @@ const App = () => {
     <div style={{ height: "100%" }}>
       <header style={{}}>
         <Navigation />
+        {/* <NavBar /> */}
       </header>
       <Switch>
         <Route path="/pricing" component={Pricing} />

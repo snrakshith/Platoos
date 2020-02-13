@@ -1,12 +1,15 @@
 .marker {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 15px;
-  height: 15px;
-  background-color: black;
-  border: 3px solid rgb(160, 156, 156);
-  border-radius: 100%;
+  background-image: url("../images/marker.svg");
+  width: 30px;
+  height: 30px;
+  /* top: 50px; */
+  /* bottom: 25%; */
+  /* left: 50%; */
+
+  /* background-color: purple; */
+  /* border: 3px solid rgb(160, 156, 156); */
+  /* border-radius: 100%; */
   /* user-select: none; */
   /* transform: translate(-50%, -50%); */
   /* cursor: ${props => (props.onClick ? 'pointer' : 'default')}; */
@@ -21,7 +24,7 @@
   font-weight: bolder;
   text-align: center;
   color: #6a6a6a;
-  margin-top: 13px;
+  margin-top: 30px;
   margin-left: -50px;
-  width: 125px;
+  width: 130px;
 }

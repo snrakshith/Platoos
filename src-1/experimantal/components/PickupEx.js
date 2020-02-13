@@ -3,6 +3,7 @@ import "../../../node_modules/bootstrap/dist/css/bootstrap.css";
 import { pickupEx } from "../api/api";
 import "../css/PickupEx.css";
 
+
 class PickupEx extends Component {
   constructor(props) {
     super(props);
